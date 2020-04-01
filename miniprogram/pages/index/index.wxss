@@ -1,0 +1,74 @@
+/**index.wxss**/
+.swiper{
+  width: 100%;
+  height: 400rpx;
+  border-bottom: 2px solid rgb(214, 209, 214);
+}
+.swiper-item{
+  width: 100%;
+  height: 400rpx;
+}
+.img{
+  width: 100%;
+  height: 400rpx;
+}
+/* list */
+.container{
+  position: relative;
+  width: 100%;
+  height: 350rpx;
+  background-color: rgba(238, 238, 238, 0.295);
+  box-sizing: border-box;
+  padding: 25rpx 20rpx;
+  margin-top: 5rpx;
+  border: 1px solid rgb(214, 209, 214);
+}
+.img-box{
+  display: inline-block;
+  width: 225rpx;
+  height: 200rpx;
+  text-align: center;
+  line-height: 150px;
+}
+.img-box image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.text-box{
+  display: inline-block;
+  width: 300rpx;
+  height: 300rpx;
+  box-sizing: border-box;
+  padding: 50rpx 0;
+}
+.title{
+  width: 100%;
+  height: 50rpx;
+  font-size: 20px;
+  padding-left: 35rpx;
+}
+.desc{
+  width: 100%;
+  height: 100rpx;
+  padding-left: 35rpx;
+  line-height: 100rpx;
+}
+.price{
+  width: 100%;
+  height: 50rpx;
+  color: red;
+  text-align: center;
+  line-height: 50rpx;
+}
+.btn{
+  position: absolute;
+  width: 200rpx;
+  height: 60rpx;
+  background-color: rgba(111, 176, 206, 0.404);
+  right: 30rpx;
+  bottom: 30rpx;
+  border: 1px solid black;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 60rpx;
+}

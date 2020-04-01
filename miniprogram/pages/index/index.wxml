@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<swiper 
+circular="true"
+indicator-dots="true"
+class="swiper"
+autoplay="true"
+interval="3000">
+    <block wx:for="{{imgUrl}}" wx:key="item">
+      <swiper-item class="swiper-item">
+        <image mode="aspectFill" class="img" src="{{item}}"></image>
+      </swiper-item>
+    </block>
+</swiper>
+<block wx:for="{{list}}" wx:key="item">
+    <navigator hover-class="none" url="../detail/detail?id={{item._id}}">
+        <view class="container">
+            <view class="img-box">
+                <image mode="aspectFill" src="{{item.img}}"></image>
+            </view>
+            <view class="text-box">
+                <view class="title">
+                    {{item.title}}
+                </view>
+                <view class="desc">  
+                    {{item.desc}} 
+                </view>
+                <view class="price">
+                    {{item.price}}
+                </view>
+            </view>
+            <view class="btn-box">
+                <view data-item="{{item}}" class="btn" catchtap="addCarts">加入购物车</view>
+            </view>               
+        </view>
+    </navigator>
+</block>

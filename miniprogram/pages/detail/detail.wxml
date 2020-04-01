@@ -1,0 +1,14 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+    <view class="img-box">
+        <image bindtap="previewimg" mode="aspectFill" src="{{fluid.img}}"></image>
+    </view>
+    <view class="detail">
+        <text class="desc">
+            {{fluid.detail}}
+        </text>
+    </view>
+    <view class="btn-box">
+        <view class="btn">加入购物车</view>
+    </view>
+</view>

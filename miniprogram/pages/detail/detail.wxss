@@ -1,0 +1,35 @@
+/* pages/detail/detail.wxss */
+.container{
+  position: relative;
+  width: 100%;
+  height: 1000rpx;
+}
+.img-box{
+  width: 100%;
+  height: 600rpx;
+  border-bottom: 3px solid rgba(224, 217, 224, 0.603);
+}
+.img-box image{
+  width: 100%;
+  height: 600rpx;
+}
+.detail{
+  width: 100%;
+  height: 300rpx;
+  font-size: 16px;
+  color: rgb(158, 155, 158);
+  box-sizing: border-box;
+  padding: 10rpx 30rpx;
+}
+.btn{
+  position: absolute;
+  width: 200rpx;
+  height: 60rpx;
+  background-color: rgba(111, 176, 206, 0.404);
+  right: 30rpx;
+  bottom: 30rpx;
+  border: 1px solid black;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
