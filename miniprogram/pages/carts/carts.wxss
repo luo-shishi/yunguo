@@ -77,14 +77,30 @@
   margin-right: 5px;
 }
 
-.order {
+.btn-g{
+  display: flex;
+  width: 180rpx;
+  justify-content: space-between;
+}
+
+.order1 {
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 20px;
+  background:rgba(250, 12, 3, 0.404);
+  border-radius: 10rpx;
+}
+
+.order2 {
   width: 50rpx;
   height: 50rpx;
   text-align: center;
   line-height: 50rpx;
   font-size: 16px;
   background:rgba(111, 176, 206, 0.404);
-  border-radius: 50%;
+  border-radius: 10rpx;
 }
 
 .tool {

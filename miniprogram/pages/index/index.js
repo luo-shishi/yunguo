@@ -110,6 +110,9 @@ Page({
       index: 1,
       text: total+''
     })
+  },
+  onShow(){
+    this.setTabBar()
   }
  
 })

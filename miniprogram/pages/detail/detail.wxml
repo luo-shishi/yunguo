@@ -9,6 +9,6 @@
         </text>
     </view>
     <view class="btn-box">
-        <view class="btn">加入购物车</view>
+        <view class="btn" catchtap="addCarts" data-item="{{fluid}}">加入购物车</view>
     </view>
 </view>

@@ -63,6 +63,34 @@ Page({
       text: '',
     })
   },
+  async downCount(e) {
+    let id = e.currentTarget.dataset.id
+    let res1=await db2.doc(id).get()
+    let num=res1.data.num
+    if(num===1){
+      await db2.doc(id).remove()
+      this.lodeCartsData()
+      await wx.showToast({
+        title: '移除成功'
+      })
+      return
+    }
+    let res = await db2.doc(id).update({
+      data: {
+        num: db.command.inc(-1)
+      }
+    })
+    this.lodeCartsData()
+    await wx.showToast({
+      title: '移除成功'
+    })
+  },
+  onTabItemTap() {
+    wx.setTabBarBadge({
+      index: 1,
+      text: '',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -74,7 +102,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+      this.lodeCartsData()
   },
 
   /**

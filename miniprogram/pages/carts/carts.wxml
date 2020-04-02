@@ -16,9 +16,12 @@
             <!-- <block wx:for='{{ item.tags }}' wx:key='*this' wx:for-item='it'>
               <text>{{ it }}</text>
             </block> -->
-            <view class="price">¥ {{ item.price }}</view>
+            <view class="price">{{ item.price }}</view>
           </view>
-          <view catchtap="addCount" data-id="{{ item._id }}" class="order">+</view>
+          <view class="btn-g">
+          <view catchtap="downCount" data-id="{{ item._id }}" class="order1">-</view>
+          <view catchtap="addCount" data-id="{{ item._id }}" class="order2">+</view>
+          </view>
         </view>
       </view>
     </view>
